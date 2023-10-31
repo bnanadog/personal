@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header />
       <NavBar />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/Info" element={<Info />} />
           <Route path='/Login' element={<Login />} />
